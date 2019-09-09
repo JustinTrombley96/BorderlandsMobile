@@ -1,0 +1,72 @@
+body {
+	background: rebeccapurple;
+}
+.container {
+	min-width: 800px;
+	color: white;
+	text-align: center;
+	background-color: black;
+	margin: 0 auto;
+	width: 50%;
+}
+header {
+	font-size: 1.8rem;
+}
+
+.stories {
+	margin-top: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+.jack {
+	height: 400px;
+	width: 400px;
+}
+.claptrap {
+	height: 400px;
+	width: 400px;
+}
+
+@media (max-width: 800px) {
+	body {
+		background-color: red;
+	}
+	.container {
+		min-width: 600px;
+	}
+	header {
+		font-size: 1rem;
+	}
+	.stories {
+		justify-content: center;
+	}
+	.jack {
+		height: 300px;
+		width: 300px;
+	}
+	.claptrap {
+		height: 300px;
+		width: 300px;
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		background-color: green;
+	}
+	.container {
+		min-width: 400px;
+	}
+	.stories {
+		flex-direction: column;
+		align-content: center;
+	}
+	.jack {
+		height: 400px;
+		width: 400px;
+	}
+	.claptrap {
+		height: 400px;
+		width: 400px;
+	}
+}
